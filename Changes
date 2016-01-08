@@ -1,2 +1,9 @@
 Revision history for List-Collection
 
+0.0.1 2016-01-08T11:47:47
+ [Yan Xueqing]
+ - Fixed out variable warning
+ - Add test file
+ - Add Collection module
+ - Initialize gitrepo with `dzil new`
+
