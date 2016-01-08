@@ -70,7 +70,7 @@ sub union {
   for my $list (@lists) {
     $elements{$_} = 1 for (@$list);
   }
-  my @out = sort { $a <=> $b } keys %elements;
+  @out = sort { $a <=> $b } keys %elements;
   return @out;
 }
 
