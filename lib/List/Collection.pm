@@ -25,6 +25,7 @@ use Exporter;
   my @complement = complement(\@a, \@b);  # result is (1,2,3,7,8,9)
 
 Or in a object-oriented way
+
   use List::Collection;
   my @a = qw/1 2 3 4 5 6/;
   my @b = qw/4 5 6 7 8 9/;
@@ -64,6 +65,7 @@ sub _remove_obj {
 =head2 intersect
 
 Intersection of multiple Lists, number of parameter could be bigger than two and type is ArrayRef
+
   my @a = qw/1 2 3 4 5 6/;
   my @b = qw/4 5 6 7 8 9/;
   my @intersect = intersect(\@a, \@b);
@@ -87,6 +89,7 @@ sub intersect {
 =head2 union
 
 union set of multiple Lists, number of parameter could be bigger than two and type is ArrayRef
+
   my @a = qw/1 2 3 4 5 6/;
   my @b = qw/4 5 6 7 8 9/;
   my @union = union(\@a, \@b);
@@ -106,6 +109,7 @@ sub union {
 =head2 subtract
 
 subtraction(difference set) of two Lists, input parameters' type is ArrayRef
+
   my @a = qw/1 2 3 4 5 6/;
   my @b = qw/4 5 6 7 8 9/;
   my @subtract = subtract(\@a, \@b);
@@ -124,6 +128,7 @@ sub subtract {
 =head2 complement 
 
 complement set of multiple Lists, number of parameter could be bigger than two and  type is ArrayRef
+
   my @a = qw/1 2 3 4 5 6/;
   my @b = qw/4 5 6 7 8 9/;
   my @complement = complement(\@a, \@b);
